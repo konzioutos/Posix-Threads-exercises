@@ -1,6 +1,6 @@
 Konstantinos Zioutos AM3946 csd3946@csd.uoc.gr
 
-In exercise 1 each car is a thread, I have two flags and two mutexes.The logic I followed is as follows:
+In exercise 1(narrow_road) each car is a thread, I have two flags and two mutexes.The logic I followed is as follows:
 the sem_car flag starts with a value of 2 to allow 2 cars before it is locked.
 When messing with shared memory (current_road_direction and road[.]) I use mutex.
 If a car is already in then if the next car that wants to get in has a different direction
